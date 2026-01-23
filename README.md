@@ -1,2 +1,2 @@
-# elementry_partical_-geometry_pattern_recogniser
-Elementry Partical Geometry Pattern Recogniser
+# elementary_partical_-geometry_pattern_recognizer
+Elementary Partical Geometry Pattern Recognizer
