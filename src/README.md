@@ -1,5 +1,6 @@
 Mathematically and electronically, it is absolutely possible to generate a combined wave that exhibits new high-frequency components—including ones that are 40 times higher than the initial frequencies—by simultaneously applying Amplitude Modulation (AM), Frequency Modulation (FM), and Phase Modulation (PM). [1] 
 However, there is a vital distinction in physics to keep in mind: modulation is a non-linear process (typically requiring multiplication or exponential functions), rather than simple linear addition (superposition).
+
 ------------------------------
 ## 1. Understanding Your Initial Wave Functions
 Let's define the three initial wave functions based on your description:
