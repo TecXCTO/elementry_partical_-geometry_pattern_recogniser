@@ -17,14 +17,17 @@ If you simply add these three waves together (linear combination), you will only
 To create a 40x frequency, you must pass these signals through non-linear modulating circuits: [3, 8] 
 ## The Power of Frequency and Phase Modulation (Angle Modulation)
 In Frequency Modulation (FM) and Phase Modulation (PM), a low-frequency message wave changes the angle of a carrier wave. Mathematically, this inserts the modulating wave inside the sine or cosine argument:
+```
 $$\text{Wave}_{\text{Angle}} = \cos\Big(2\pi f_c t + \beta \sin(2\pi f_m t + \phi)\Big)$$ 
 By expanding this using Bessel Functions, a single FM/PM interaction generates an infinite spectrum of sideband frequencies separated by integer multiples of the modulating frequency:
 $$f_{\text{out}} = f_c \pm n \cdot f_m \quad (\text{where } n = 1, 2, 3, 40, \dots)$$ 
 If your modulation index ($\beta$) is high enough (Wideband FM), energy is cleanly pushed into higher-order sidebands, allowing you to filter out a harmonic that is exactly 40 times higher than your base frequency. [9, 10] 
+```
 ## The Combined Equation (Simultaneous AM-FM-PM)
 When you combine all three types of modulation simultaneously onto a carrier wave, the resulting unified wave function is structured like this:
+```
 $$Y(t) = \underbrace{\Big[1 + k_a \cdot W_1(t)\Big]}_{\text{Amplitude Modulation (AM)}} \cdot \cos \bigg( 2\pi f_c t + \underbrace{k_f \int W_2(t) dt}_{\text{Frequency Modulation}} + \underbrace{k_p \cdot W_3(t)}_{\text{Phase Modulation}} + \theta \bigg)$$ 
-
+```
 * 
 * AM Component: Changes the envelope height. Your double-amplitude wave ($W_1$) will heavily pulse the overall signal power.
 * FM & PM Components: Distort the timing and pitch of the carrier wave. Because $W_2$ and $W_3$ have different phases, their peaks and troughs arrive at different times, creating an incredibly rich, asymmetric spectrum of high-frequency spikes. [2, 3, 4] 
@@ -65,6 +68,7 @@ When using Frequency/Phase Modulation to create high frequencies, the power of t
 
 ## Component Speed Limits
 Every electronic circuit or physical medium has a maximum operating frequency (cutoff frequency). You can mathematically design an 80x wave, but if your electronic components cannot switch on and off fast enough to handle that 80x speed, the circuit will simply smooth it out and output nothing.
+
 ------------------------------
 ## The "Sweet Spot" Range (Where it Works Best)
 For simultaneous AM-FM-PM systems, the system works best and most efficiently within the 1x to 16x range in a single modulation stage.
