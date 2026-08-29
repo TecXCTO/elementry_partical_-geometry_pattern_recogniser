@@ -90,7 +90,9 @@ When the wave jumps to 40 times the frequency, the phase tracking functions unde
 
    1. Compressed Cycle Width: One complete $360^\circ$ cycle of your original wave now contains exactly 40 full cycles of the modulated wave.
    2. Instantaneous Phase Rule: The exact phase angle (in degrees) at any given millisecond $t$ is calculated by:
-   $$\text{Total Phase (Degrees)} = \left( 360 \times f_c \times t + \text{Phase Shift from Wave 3} \right) \pmod{360}$$ 
+```
+   $$\text{Total Phase (Degrees)} = \left( 360 \times f_c \times t + \text{Phase Shift from Wave 3} \right) \pmod{360}$$
+```
    3. AM Envelope Alignment: While the phase changes rapidly at $40\times$ speed, the overall volume (amplitude) of the wave peaks will still swell and shrink smoothly at the slower rate of your double-amplitude initial wave.
 
 
