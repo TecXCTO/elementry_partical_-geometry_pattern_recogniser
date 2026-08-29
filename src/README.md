@@ -42,6 +42,7 @@ This exact concept isn't just theoretical; it drives complex wave systems today:
 
 In engineering, physics, and signal processing, the limit on how high you can push a frequency multiplier or simultaneous modulation scheme (whether 40x, 80x, or higher) depends heavily on the technology platform you are using.
 Below is the practical range of how many times you can multiply or scale up a frequency using modulation and non-linear synthesis techniques.
+
 ------------------------------
 ## The Multiplication Range Matrix
 
@@ -74,6 +75,7 @@ If you need to reach 40x, 80x, or higher safely, engineers use Cascading (Multi-
    3. Stage 3 multiplies it by 4x again (Total = 80x).
 
 Breaking a massive jump down into smaller multiplication steps keeps the wave stable, prevents signal distortion, and preserves power.
+
 ------------------------------
 
 
@@ -183,8 +185,9 @@ $$A_{\text{res}}(t) = \pm \Big[ 1 + k_a \cdot W_1(t) \Big]$$
 (Where $k_a$ is your AM scaling sensitivity, usually between 0.1 and 0.5).
 ## Step 3: Calculate the Resulting Instantaneous Phase
 The total accumulation of degrees/radians inside the resulting wave at instant $t$ is driven by the target carrier frequency ($20f$), modified dynamically by Wave 2 (FM) and Wave 3 (PM):
+```
 $$\Phi_{\text{res}}(t) = \underbrace{2\pi (20f)t}_{\text{Target Frequency Shift}} - \underbrace{\left(\frac{k_f \cdot A}{2\pi f}\right) \cos(2\pi f t + \phi_2)}_{\text{FM Phase Contribution}} + \underbrace{k_p \cdot A \sin(2\pi f t + \phi_3)}_{\text{PM Phase Contribution}}$$ 
-
+```
 * Note on FM: Because Frequency Modulation acts on the integral of the wave, the sine function of Wave 2 mathematically transforms into a negative cosine component in the final phase argument.
 * Sensitivities: $k_f$ and $k_p$ are your custom electronic adjustment scaling factors.
 
