@@ -1,4 +1,6 @@
-#Elementary Partical Geometry Pattern Recognizer
+# Elementary Partical Geometry Pattern Recognizer
 
 
-Elementary Partical Primitive Radius at Respective Frequency
+# Elementary Partical's
+
+# Primitive Radius at Respective Frequency
